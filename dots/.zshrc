@@ -40,3 +40,6 @@ _load_settings "$HOME/.zsh/configs"
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+
+eval "$(starship init zsh)"
+alias vi="lvim"
