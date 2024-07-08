@@ -10,13 +10,13 @@
 1. unzip and run Arch.zip
 
 ## ArchLinux
-1. echo "%wheel ALL=(ALL) ALL" > /etc/sudoers.d/wheel
-1. useradd -m -G wheel -s /bin/bash cheems
-1. passwd cheems
+1. `echo "%wheel ALL=(ALL) ALL" > /etc/sudoers.d/wheel`
+1. `useradd -m -G wheel -s /bin/bash cheems`
+1. `passwd cheems`
 
 ## Windows
 1. Arch.exe config --default-user cheems
-1. (Optional) Set Terminal (Default System, Shortcuts(`Command+/``), Styles, etc.)
+1. (Optional) Set Terminal (Default System, Shortcuts, Styles, etc.)
 
 ## ArchLinux
 1. `sudo pacman-key --init`
