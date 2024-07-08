@@ -3,11 +3,11 @@
 # essential packages for ArchLinux or Manjaro
 
 pacman -Syyu
-pacman -S zsh neovim npm starship fastfetch
+pacman -S zsh python neovim npm starship fastfetch \
+  openssh git make cargo ripgrep lazygit
 
 # yay
-# ohmyzsh
 chsh -s $(which zsh)
 
-# lvim: npm
+# lvim
 # devbox
