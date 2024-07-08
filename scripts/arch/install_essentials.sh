@@ -3,7 +3,7 @@
 # essential packages for ArchLinux or Manjaro
 
 pacman -Syyu
-pacman -S zsh neovim npm starship neofetch
+pacman -S zsh neovim npm starship fastfetch
 
 # yay
 # ohmyzsh
