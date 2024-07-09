@@ -1,0 +1,13 @@
+{
+  "snippet_body": {
+    "prefix": "snippet_body",
+    "body": [
+      "\"${2:hint}\": {",
+      "  \"prefix\": \"${2:hint}\",",
+      "  \"body\": [",
+      "  ${1}",
+      "  ]",
+      "},"
+    ]
+  }
+}
