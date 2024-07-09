@@ -1,0 +1,46 @@
+{
+  "packages": [
+    "nginx@latest",
+  ],
+  "env": {
+    "PROJECT_DIR": "$PWD",
+
+    "NGINX_CONFDIR": "$PWD/config/nginx",
+    "NGINX_PATH_PREFIX": "$PWD/.devbox/virtenv/nginx",
+    "NGINX_PIDDIR": "$PWD/.devbox/virtenv/nginx/nginx.pid",
+    "NGINX_TMPDIR": "$PWD/.devbox/virtenv/nginx/temp",
+    "NGINX_USER": "root",
+    "NGINX_GROUP": "root",
+
+    "PHPRC": "$PWD/config/php/php.ini",
+
+    "PHP74": "$PWD/../php/74",
+    "PHPFPM74": "$PWD/config/php/php-fpm74.conf",
+    "PHPFPM74_PORT": "9174",
+    "PHPFPM74_PID_FILE": "$PWD/.devbox/virtenv/php-fpm74.pid",
+    "PHPFPM74_ERROR_LOG_FILE": "$PWD/.devbox/virtenv/php-fpm74.log",
+
+    "PHP81": "$PWD/../php/81",
+    "PHPFPM81": "$PWD/config/php/php-fpm81.conf",
+    "PHPFPM81_PORT": "9181",
+    "PHPFPM81_PID_FILE": "$PWD/.devbox/virtenv/php-fpm81.pid",
+    "PHPFPM81_ERROR_LOG_FILE": "$PWD/.devbox/virtenv/php-fpm81.log",
+
+    "PHP83": "$PWD/../php/83",
+    "PHPFPM83": "$PWD/config/php/php-fpm83.conf",
+    "PHPFPM83_PORT": "9183",
+    "PHPFPM83_PID_FILE": "$PWD/.devbox/virtenv/php-fpm83.pid",
+    "PHPFPM83_ERROR_LOG_FILE": "$PWD/.devbox/virtenv/php-fpm83.log"
+  },
+  "shell": {
+    "init_hook": [
+      "alias php74=\"devbox run -c $PHP74 php\"",
+      "alias php74composer=\"devbox run -c $PHP74 composer\"",
+      "alias php81=\"devbox run -c $PHP81 php\"",
+      "alias php81composer=\"devbox run -c $PHP81 composer\"",
+      "alias php83=\"devbox run -c $PHP83 php\"",
+      "alias php83composer=\"devbox run -c $PHP83 composer\"",
+    ],
+    "scripts": {}
+  }
+}

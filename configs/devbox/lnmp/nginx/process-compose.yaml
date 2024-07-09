@@ -1,0 +1,36 @@
+version: "0.5"
+
+processes:
+  php-fpm74:
+    command: "devbox run -c $PHP74 php-fpm -R -y $PHPFPM74 --nodaemonize"
+    shutdown:
+      command: "kill -INT `cat $PHPFPM74_PID_FILE`"
+    availability:
+      restart: "always"
+  # php-fpm81:
+  #   command: "devbox run -c $PHP81 php-fpm -R -y $PHPFPM81 --nodaemonize"
+  #   shutdown:
+  #     command: "kill -INT `cat $PHPFPM81_PID_FILE`"
+  #   availability:
+  #     restart: "always"
+  php-fpm83:
+    command: "devbox run -c $PHP83 php-fpm -R -y $PHPFPM83 --nodaemonize"
+    shutdown:
+      command: "kill -INT `cat $PHPFPM83_PID_FILE`"
+    availability:
+      restart: "always"
+  nginx:
+    command: |
+      if [ -f $NGINX_CONFDIR/nginx.template ]; then envsubst $(awk 'BEGIN {for (k in ENVIRON) {printf "$"k","}}') < $NGINX_CONFDIR/nginx.template > $NGINX_CONFDIR/nginx.conf; fi
+      nginx -p $NGINX_PATH_PREFIX -c $NGINX_CONFDIR/nginx.conf -e error.log -g "pid nginx.pid;daemon off;"
+    availability:
+      restart: on_failure
+      max_restarts: 5
+  nginx-error:
+    command: "tail -f $NGINX_PATH_PREFIX/error.log"
+    availability:
+      restart: "always"
+  nginx-access:
+    command: "tail -f $NGINX_PATH_PREFIX/access.log"
+    availability:
+      restart: "always"

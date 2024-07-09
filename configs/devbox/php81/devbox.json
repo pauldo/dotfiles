@@ -1,0 +1,36 @@
+{
+  "packages": [
+    "nginx@latest",
+    "php@8.1.27",
+    "php81Packages.composer@latest",
+    "php81Extensions.bcmath@latest",
+    "php81Extensions.curl@latest",
+    "php81Extensions.openssl@latest",
+    "php81Extensions.opcache@latest",
+    "php81Extensions.pdo@latest",
+    "php81Extensions.pdo_mysql@latest",
+    "php81Extensions.redis@latest"
+  ],
+  "env": {
+    "PROJECT_DIR": "$PWD",
+    "PHPRC": "$PWD/config/php/php.ini",
+    "PHPFPM": "$PWD/config/php/php-fpm.conf",
+    "PHPFPM_PORT": "8081",
+    "PHPFPM_PID_FILE": "$PWD/.devbox/virtenv/php/php-fpm.pid",
+    "PHPFPM_ERROR_LOG_FILE": "$PWD/.devbox/virtenv/php/php-fpm.log",
+    "PHPFPM81": "$PWD/config/php/php-fpm81.conf",
+    "PHPFPM81_PORT": "8082",
+    "PHPFPM81_PID_FILE": "$PWD/.devbox/virtenv/php/php-fpm.pid",
+    "PHPFPM81_ERROR_LOG_FILE": "$PWD/.devbox/virtenv/php/php-fpm.log",
+    "NGINX_CONFDIR": "$PWD/config/nginx",
+    "NGINX_PATH_PREFIX": "$PWD/.devbox/virtenv/nginx",
+    "NGINX_PIDDIR": "$PWD/.devbox/virtenv/nginx/nginx.pid",
+    "NGINX_TMPDIR": "$PWD/.devbox/virtenv/nginx/temp",
+    "NGINX_USER": "root",
+    "NGINX_GROUP": "root"
+  },
+  "shell": {
+    "init_hook": [],
+    "scripts": {}
+  }
+}

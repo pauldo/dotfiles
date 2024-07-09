@@ -1,0 +1,27 @@
+{
+  "packages": [
+    "mysql57@latest",
+    "mysql-client@10.6.12",
+  ],
+  "env": {
+    "PROJECT_DIR": "$PWD",
+    "MYSQL_BASEDIR": "$PWD/.devbox/nix/profile/default",
+    "MYSQL_HOME": "$PWD/home",
+    "MYSQL_DATADIR": "$PWD/.devbox/virtenv/mysql/data",
+    "MYSQL_UNIX_PORT": "$PWD/.devbox/virtenv/mysql/run/mysql.sock",
+    "MYSQL_PID_FILE": "$PWD/.devbox/virtenv/mysql/run/mysql.pid"
+  },
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null",
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1",
+      ],
+    },
+  },
+  "include": [
+    "plugin:mysql",
+  ],
+}

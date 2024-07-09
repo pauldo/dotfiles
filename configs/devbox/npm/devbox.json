@@ -1,0 +1,21 @@
+{
+  "packages": [
+    "nodejs@22.2.0",
+    "nodePackages.pm2@latest",
+    "nodePackages.pnpm@8.15.5",
+    "nodePackages.yarn@1.22.22"
+  ],
+  "env": {
+    "DEVBOX_COREPACK_ENABLED": "true"
+  },
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null"
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}

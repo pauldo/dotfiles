@@ -1,0 +1,17 @@
+{
+  "packages": [
+    "php@8.3.8",
+    "php83Packages.composer@latest",
+    "php83Extensions.bcmath@8.3.8",
+    "php83Extensions.curl@8.3.8",
+    "php83Extensions.openssl@8.3.8",
+    "php83Extensions.opcache@8.3.8",
+    "php83Extensions.pdo@8.3.8",
+    "php83Extensions.pdo_mysql@8.3.8",
+    "php83Extensions.redis@latest"
+  ],
+  "shell": {
+    "init_hook": [],
+    "scripts": {}
+  }
+}

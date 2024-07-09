@@ -1,0 +1,27 @@
+{
+  "packages": [
+    "php@7.4.29",
+    "php74Packages.composer@latest",
+    "php74Extensions.bcmath@latest",
+    "php74Extensions.gd@latest",
+    "php74Extensions.gettext@latest",
+    "php74Extensions.intl@latest",
+    "php74Extensions.pcntl@latest",
+    "php74Extensions.shmop@latest",
+    "php74Extensions.soap@latest",
+    "php74Extensions.sockets@latest",
+    "php74Extensions.sysvsem@latest",
+    "php74Extensions.xmlrpc@latest",
+    "php74Extensions.zip@latest",
+    "php74Extensions.mbstring@latest",
+    "php74Extensions.curl@latest",
+    "php74Extensions.opcache@latest",
+    "php74Extensions.redis@latest",
+    "php74Extensions.pdo@latest",
+    "php74Extensions.pdo_mysql@latest"
+  ],
+  "shell": {
+    "init_hook": [],
+    "scripts": {}
+  }
+}
