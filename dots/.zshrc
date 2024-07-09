@@ -41,5 +41,10 @@ _load_settings "$HOME/.zsh/configs"
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
+#export PATH="$PATH:$(yarn global bin)"
+export PATH="$PATH:$HOME/.yarn/bin:$HOME/.local/bin:$HOME/.cargo/bin"
+export ZSH="$HOME/.oh-my-zsh"
+
+source $ZSH/oh-my-zsh.sh
+
 eval "$(starship init zsh)"
-alias vi="lvim"
