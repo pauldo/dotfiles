@@ -9,4 +9,4 @@ bufferline = "multiple"
 [keys.normal."ret"]
 w = ":w"
 q = ":q"
-b = { n = ":bn", p = ":bp", l = "buffer_picker" }
+b = { n = ":bn", p = ":bp", c = ":bc", l = "buffer_picker" }
