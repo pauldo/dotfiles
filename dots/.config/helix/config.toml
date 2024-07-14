@@ -9,4 +9,7 @@ bufferline = "multiple"
 [keys.normal."ret"]
 w = ":w"
 q = ":q"
-b = { n = ":bn", p = ":bp", c = ":bc", l = "buffer_picker" }
+c = ":bc"
+o = ":bco"
+r = ":rl"
+H = { r = ":config-reload", o = ":config-open" }
