@@ -6,3 +6,7 @@ true-color = true
 cursorline = true
 bufferline = "multiple"
 
+[keys.normal."ret"]
+w = ":w"
+q = ":q"
+b = { n = ":bn", p = ":bp", l = "buffer_picker" }
