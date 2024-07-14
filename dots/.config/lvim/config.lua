@@ -4,7 +4,7 @@
 -- find symbols in file: ,ls
 vim.opt.mouse = "" -- Don't use mouse
 vim.opt.wrap = true
-lvim.leader = ","
+-- lvim.leader = "," -- Use default space due to helix
 
 lvim.plugins = {
   {
