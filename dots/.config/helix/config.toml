@@ -1,10 +1,13 @@
-theme = "tokyonight_storm"
+theme = "everblush"
 
 [editor]
 mouse = false
 true-color = true
 cursorline = true
 bufferline = "multiple"
+
+[editor.smart-tab]
+enable = false
 
 [keys.normal."ret"]
 w = ":w"
@@ -13,3 +16,4 @@ c = ":bc"
 o = ":bco"
 r = ":rl"
 H = { r = ":config-reload", o = ":config-open" }
+
