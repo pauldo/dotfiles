@@ -1,0 +1,8 @@
+theme = "tokyonight_storm"
+
+[editor]
+mouse = false
+true-color = true
+cursorline = true
+bufferline = "multiple"
+
