@@ -1,10 +1,11 @@
-theme = "everblush"
+theme = "ayu_dark"
 
 [editor]
 mouse = false
 true-color = true
 cursorline = true
 bufferline = "multiple"
+rulers = [80, 120]
 
 [editor.smart-tab]
 enable = false
@@ -15,5 +16,6 @@ q = ":q"
 c = ":bc"
 o = ":bco"
 r = ":rl"
+R = ":rla"
 H = { r = ":config-reload", o = ":config-open" }
 

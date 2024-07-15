@@ -2,3 +2,7 @@
 # https://github.com/helix-editor/helix/wiki/Language-Server-Configurations
 [language-server.rust-analyzer.config.check]
 command = "clippy"
+
+[[language]]
+name = "php"
+indent = { tab-width = 4, unit = "    " }
