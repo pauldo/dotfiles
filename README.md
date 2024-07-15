@@ -7,10 +7,10 @@
 ## Feature
 
 - LunarVim
+- Helix
 - Devbox
 - Zsh
 - Tmux
-  - Set prefix to `Ctrl+a`
 
 ## Readmes
 - [ArchWSL](https://github.com/pauldo/dotfiles/blob/main/scripts/arch/wsl.md)

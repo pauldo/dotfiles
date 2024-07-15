@@ -10,6 +10,9 @@ rulers = [80, 120]
 [editor.smart-tab]
 enable = false
 
+[editor.file-picker]
+hidden = false
+
 [keys.normal."ret"]
 w = ":w"
 q = ":q"
