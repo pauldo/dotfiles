@@ -20,5 +20,11 @@ c = ":bc"
 o = ":bco"
 r = ":rl"
 R = ":rla"
+j = [
+  "wonly", "vsplit_new",
+  ":insert-output curl -s -X GET http://127.0.0.1:60023/api/test",
+  ":append-output echo 'test'",
+  "rotate_view"
+]
 H = { r = ":config-reload", o = ":config-open" }
 
