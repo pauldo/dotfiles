@@ -138,11 +138,12 @@ keybinds {
         }
         // custom: lazygit
         bind "g" {
-            Run "zellij" "run" "-f" "-c" "--" "lazygit" {
+            Run "zellij" "run" "-f" "-c" "-x=10%" "--width=80%" "--" "lazygit" {
                 close_on_exit true
                 simplified_ui true
                 start_suspended false
-                width "60%"
+                // x "10%"
+                // width "80%"
                 height "60%"
             };
             SwitchToMode "Normal";
@@ -174,8 +175,8 @@ keybinds {
         bind "Ctrl g" { SwitchToMode "Locked"; }
         bind "Ctrl q" { Quit; }
         bind "Alt n" { NewPane; }
-        bind "Alt i" { MoveTab "Left"; }
-        bind "Alt o" { MoveTab "Right"; }
+        // bind "Alt i" { MoveTab "Left"; }
+        // bind "Alt o" { MoveTab "Right"; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
         bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
         bind "Alt j" "Alt Down" { MoveFocus "Down"; }
