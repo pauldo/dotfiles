@@ -128,9 +128,11 @@ keybinds {
         // custom: tspin
         bind "Ctrl l" {
             Run "tspin" "-f" "." {
-                direction "Right"
+                direction "Down"
             };
             FocusPreviousPane;
+            Resize "Increase";
+            Resize "Increase";
             SwitchToMode "Normal";
         }
         // custom: lazygit
