@@ -38,7 +38,7 @@ layout {
             tab_active_sync         "#[fg=#9399B2,bg=#181825,bold,italic] {index} {name} <> "
 
             command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
-            command_git_branch_format      "#[fg=#181825,bg=#5C5C66]#[fg=black,bg=#5C5C66] {stdout} #[fg=#5C5C66,bg=#181825]"
+            command_git_branch_format      "#[fg=#181825,bg=#181825]#[fg=#b1bbfa,bg=#181825] {stdout} #[fg=#181825,bg=#181825]"
             command_git_branch_interval    "10"
             command_git_branch_rendermode  "static"
 
