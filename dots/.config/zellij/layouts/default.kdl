@@ -15,9 +15,20 @@ layout {
 
             hide_frame_for_single_pane "true"
 
-            mode_normal  "NOR"
-            mode_locked  "LOCK"
-            mode_tmux    "TMUX"
+            mode_normal        "{name}"
+            mode_locked        "{name}"
+            mode_resize        "{name}"
+            mode_pane          "{name}"
+            mode_tab           "{name}"
+            mode_scroll        "{name}"
+            mode_enter_search  "{name}"
+            mode_search        "{name}"
+            mode_rename_tab    "{name}"
+            mode_rename_pane   "{name}"
+            mode_session       "{name}"
+            mode_move          "{name}"
+            mode_prompt        "{name}"
+            mode_tmux          "{name}"
 
             tab_normal              "#[fg=#181825,bg=#4C4C59] #[fg=#000000,bg=#4C4C59]{index}  {name} #[fg=#4C4C59,bg=#181825]"
             tab_normal_fullscreen   "#[fg=#6C7086,bg=#181825] {index} {name} [] "
@@ -27,7 +38,7 @@ layout {
             tab_active_sync         "#[fg=#9399B2,bg=#181825,bold,italic] {index} {name} <> "
 
             command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
-            command_git_branch_format      "#[fg=#181825,bg=blue]#[fg=black,bg=blue]{stdout}#[fg=blue,bg=#181825]"
+            command_git_branch_format      "#[fg=#181825,bg=#5C5C66]#[fg=black,bg=#5C5C66] {stdout} #[fg=#5C5C66,bg=#181825]"
             command_git_branch_interval    "10"
             command_git_branch_rendermode  "static"
 
