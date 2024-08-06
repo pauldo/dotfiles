@@ -1,6 +1,6 @@
 // If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
 keybinds {
-    unbind "Ctrl n" "Ctrl p" "Alt i" "Alt o"
+    unbind "Ctrl n" "Ctrl p" "Ctrl o" "Ctrl r" "Alt i" "Alt o"
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
@@ -9,7 +9,7 @@ keybinds {
         bind "Ctrl g" { SwitchToMode "Normal"; }
     }
     resize {
-        bind "Ctrl r" { SwitchToMode "Normal"; }
+        bind "Ctrl y" { SwitchToMode "Normal"; }
         bind "h" "Left" { Resize "Increase Left"; }
         bind "j" "Down" { Resize "Increase Down"; }
         bind "k" "Up" { Resize "Increase Up"; }
@@ -194,7 +194,7 @@ keybinds {
     shared_except "resize" "locked" {
         // bind "Ctrl n" { SwitchToMode "Resize"; }
         // custom: change keybinding
-        bind "Ctrl r" { SwitchToMode "Resize"; }
+        bind "Ctrl y" { SwitchToMode "Resize"; }
     }
     shared_except "scroll" "locked" {
         bind "Ctrl s" { SwitchToMode "Scroll"; }
