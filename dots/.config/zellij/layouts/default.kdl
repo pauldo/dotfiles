@@ -7,6 +7,8 @@ layout {
         pane stacked=true {
             pane expanded=true focus=true command="helix"
             pane
+            pane
+            children
         }
     }
 
