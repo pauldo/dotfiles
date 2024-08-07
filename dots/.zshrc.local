@@ -6,3 +6,4 @@
 
 #export PATH="$PATH:$(yarn global bin)"
 export PATH="$PATH:$HOME/.yarn/bin:$HOME/.local/bin:$HOME/.cargo/bin"
+export GITHUBSSH="ssh://git@ssh.github.com:443/"
