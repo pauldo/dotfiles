@@ -35,7 +35,7 @@ config.colors = {
 config.background = {
   {
     source = {
-      File = '/Users/paul/dotfiles/dots/.wezterm.attachments/Alien_Ship_bg_vert_images/Backgrounds/spaceship_bg_1.png',
+      File = '/Users/paul/dotfiles/dots/.wezterm.attachments/Alien_Ship_bg_vert_images/Backgrounds/spaceship_bg_1@2x.png',
     },
     repeat_x = 'Mirror',
     hsb = dimmer,
@@ -43,7 +43,7 @@ config.background = {
   },
   {
     source = {
-      File = '/Users/paul/dotfiles/dots/.wezterm.attachments/Alien_Ship_bg_vert_images/Overlays/overlay_1_spines.png',
+      File = '/Users/paul/dotfiles/dots/.wezterm.attachments/Alien_Ship_bg_vert_images/Overlays/overlay_1_spines@2x.png',
     },
     width = '100%',
     repeat_x = 'NoRepeat',
@@ -54,7 +54,7 @@ config.background = {
   },
   {
     source = {
-      File = '/Users/paul/dotfiles/dots/.wezterm.attachments/Alien_Ship_bg_vert_images/Overlays/overlay_2_alienball.png',
+      File = '/Users/paul/dotfiles/dots/.wezterm.attachments/Alien_Ship_bg_vert_images/Overlays/overlay_2_alienball@2x.png',
     },
     width = '100%',
     repeat_x = 'NoRepeat',
@@ -65,7 +65,7 @@ config.background = {
   },
   {
     source = {
-      File = '/Users/paul/dotfiles/dots/.wezterm.attachments/Alien_Ship_bg_vert_images/Overlays/overlay_3_lobster.png',
+      File = '/Users/paul/dotfiles/dots/.wezterm.attachments/Alien_Ship_bg_vert_images/Overlays/overlay_3_lobster@2x.png',
     },
     width = '100%',
     repeat_x = 'NoRepeat',
@@ -77,7 +77,7 @@ config.background = {
   },
   {
     source = {
-      File = '/Users/paul/dotfiles/dots/.wezterm.attachments/Alien_Ship_bg_vert_images/Overlays/overlay_4_spiderlegs.png',
+      File = '/Users/paul/dotfiles/dots/.wezterm.attachments/Alien_Ship_bg_vert_images/Overlays/overlay_4_spiderlegs@2x.png',
     },
     width = '100%',
     repeat_x = 'NoRepeat',
