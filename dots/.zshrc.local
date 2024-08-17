@@ -1,9 +1,19 @@
 # Local config
 # [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
-# aliases
-[[ -f ~/.aliases ]] && source ~/.aliases
-
 #export PATH="$PATH:$(yarn global bin)"
 export PATH="$PATH:$HOME/.yarn/bin:$HOME/.local/bin:$HOME/.cargo/bin"
-export GITHUBSSH="ssh://git@ssh.github.com:443/"
+export PROXY="http://127.0.0.1:7890"
+export GHSSH="ssh://git@ssh.github.com:443"
+export GHPROXY1="https://gitclone.com/github.com"
+export GHPROXY2="https://kkgithub.com"
+export GHPROXY3="https://gitdl.cn/https://github.com"
+export GHPROXY4="https://mirror.ghproxy.com/https://github.com"
+export GHPROXY5="https://githubfast.com"
+export GHPROXY6="https://ghproxy.net/https://github.com"
+
+# check .local/bin
+# check chsrc curl -L https://gitee.com/RubyMetric/chsrc/releases/download/pre/chsrc-x64-linux -o chsrc; chmod +x ./chsrc
+
+# aliases
+[[ -f ~/.aliases ]] && source ~/.aliases

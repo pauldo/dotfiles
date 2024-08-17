@@ -7,6 +7,9 @@ cursorline = true
 bufferline = "multiple"
 rulers = [80, 120]
 
+[editor.soft-wrap]
+enable = true
+
 [editor.smart-tab]
 enable = false
 

@@ -2,6 +2,5 @@ alias myip="curl https://ipinfo.io/json"
 alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 alias vi="lvim"
 alias hx="helix"
-
-alias setproxy='export HTTPS_PROXY=http://127.0.0.1:7890 HTTP_PROXY=http://127.0.0.1:7890 ALL_PROXY=socks5://127.0.0.1:7890'
+alias setproxy='export HTTPS_PROXY=${PROXY:-http://127.0.0.1:7890} HTTP_PROXY=${PROXY:-http://127.0.0.1:7890} ALL_PROXY=${PROXY:-socks5://127.0.0.1:7890}'
 alias unsetproxy='unset HTTPS_PROXY HTTP_PROXY ALL_PROXY'
