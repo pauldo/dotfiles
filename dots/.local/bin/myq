@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sql=$*
+mysql -h"${MY_HOST:-127.0.0.1}" -u"${MY_USER:-test}" -p"${MY_PWD:-test}" "${MY_DB:-test}" -e "$sql"

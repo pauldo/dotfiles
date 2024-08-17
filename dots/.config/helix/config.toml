@@ -6,6 +6,7 @@ true-color = true
 cursorline = true
 bufferline = "multiple"
 rulers = [80, 120]
+auto-format = true
 
 [editor.soft-wrap]
 enable = true
