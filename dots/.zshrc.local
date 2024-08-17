@@ -2,7 +2,7 @@
 # [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 #export PATH="$PATH:$(yarn global bin)"
-export PATH="$PATH:$HOME/.yarn/bin:$HOME/.local/bin:$HOME/.cargo/bin"
+export PATH="$PATH:/usr/local/node/bin:$HOME/.yarn/bin:$HOME/.local/bin:$HOME/.cargo/bin"
 export PROXY="http://127.0.0.1:7890"
 export GHSSH="ssh://git@ssh.github.com:443"
 export GHPROXY1="https://gitclone.com/github.com"
