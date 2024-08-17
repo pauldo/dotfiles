@@ -1,0 +1,17 @@
+#!/bin/bash
+
+get_arch=`arch`
+url_fix=""
+if [[ $get_arch =~ "x86_64" ]];then
+	url_fix="x64"
+elif [[ $get_arch =~ "aarch64" ]];then
+	url_fix="aarch64"
+else
+  echo "no suitable arch!!"
+	exit
+fi
+
+origin_exec="$HOME/.local/bin/chsrc_$url_fix"
+[[ ! -f $origin_exec ]] && curl -L https://gitee.com/RubyMetric/chsrc/releases/download/pre/chsrc-$url_fix-linux -o $origin_exec && chmod +x $origin_exec
+
+$origin_exec $@
