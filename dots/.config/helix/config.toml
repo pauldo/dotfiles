@@ -27,5 +27,9 @@ R = ":rla"
 j = [
   ":sh cargo run"
 ]
+s = [
+  ":sh myq \"select 2\""
+  # ":sh myq \"<C-r>.\""
+]
 H = { r = ":config-reload", o = ":config-open" }
 
