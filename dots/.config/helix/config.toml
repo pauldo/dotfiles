@@ -24,12 +24,8 @@ c = ":bc"
 o = ":bco"
 r = ":rl"
 R = ":rla"
-j = [
-  ":sh cargo run"
-]
-s = [
-  ":sh myq \"select 2\""
-  # ":sh myq \"<C-r>.\""
-]
+j = ":sh cargo run"
+s = ":pipe myq"
+
 H = { r = ":config-reload", o = ":config-open" }
 
