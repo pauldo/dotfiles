@@ -20,14 +20,32 @@ hidden = false
 [keys.normal."ret"]
 w = ":w"
 q = ":q"
+Q = ":qa!"
 c = ":bc"
 C = ":bc!"
 o = ":bco"
 r = ":rl"
 R = ":rla"
 # j = ":sh cargo run"
-s = ["extend_line_below", "yank", ":hsplit-new", "paste_after", ":pipe myq"]
-j = ["extend_line_below", "yank", ":vsplit-new", "paste_after", ":pipe myr"]
+s = [
+  "wonly",
+  "extend_line_below",
+  "yank",
+  ":hsplit-new",
+  "paste_after",
+  ":pipe myq",
+  "rotate_view"
+]
+j = [
+  "wonly",
+  "extend_line_below",
+  "yank",
+  ":vsplit-new",
+  "paste_after",
+  ":pipe myr",
+  "goto_file_start",
+  "rotate_view"
+]
 
 H = { r = ":config-reload", o = ":config-open" }
 
