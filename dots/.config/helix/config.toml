@@ -25,7 +25,7 @@ o = ":bco"
 r = ":rl"
 R = ":rla"
 j = ":sh cargo run"
-s = ":pipe myq"
+s = ["extend_line_below", "yank", ":hsplit-new", "paste_after", ":pipe myq"]
 
 H = { r = ":config-reload", o = ":config-open" }
 
