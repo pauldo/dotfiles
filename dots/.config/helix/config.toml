@@ -21,12 +21,13 @@ hidden = false
 w = ":w"
 q = ":q"
 c = ":bc"
+C = ":bc!"
 o = ":bco"
 r = ":rl"
 R = ":rla"
-j = ":sh cargo run"
+# j = ":sh cargo run"
 s = ["extend_line_below", "yank", ":hsplit-new", "paste_after", ":pipe myq"]
-h = ":pipe myr"
+j = ["extend_line_below", "yank", ":vsplit-new", "paste_after", ":pipe myr"]
 
 H = { r = ":config-reload", o = ":config-open" }
 
