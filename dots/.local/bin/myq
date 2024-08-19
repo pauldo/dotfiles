@@ -1,3 +1,12 @@
 #!/bin/bash
 
-mysql -h"${MY_HOST:-127.0.0.1}" -u"${MY_USER:-test}" -p"${MY_PWD:-test}" "${MY_DB:-test}" -e "$@"
+# echo $(cat)
+# First, define a file like below:
+# export MYSQL_HOST=""
+# export MYSQL_PWD=""
+# export MYSQL_USER=""
+# export MYSQL_DB=""
+# Second, source the file.
+# MYSQL_HOST and MYSQL_PWD vars will including implicitly
+# See also https://dev.mysql.com/doc/refman/8.4/en/environment-variables.html
+mysql -u"${MYSQL_USER:-test}" "${MYSQL_DB:-test}" -e "$(cat)"
