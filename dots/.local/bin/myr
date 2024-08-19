@@ -1,0 +1,29 @@
+#!/bin/bash
+
+url="http://127.0.0.1:60015/api/"
+TOKEN="uid: 1"
+
+method="GET"
+path="/"
+content=""
+
+IN=$(cat)
+
+declare -i j=0
+for i in $(echo $IN | tr " " "\n")
+do
+  if [[ $j == 0 ]]; then
+    method=$i
+  elif [[ $j == 1 ]]; then
+    path=$i
+  else
+    content="$content $i"
+  fi
+  j+=1
+done
+
+# content process
+cmd="curl -sS -H 'Content-Type: application/json; charset=utf-8' -H '${TOKEN:-token: 1}' -X $method --data '$content' $url$path"
+
+echo $cmd
+# $cmd
