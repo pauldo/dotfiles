@@ -30,6 +30,7 @@ R = ":rla"
 # j = ":sh cargo run"
 C-r = [
   "wonly",
+  ":buffer-close-others!",
   "extend_to_line_bounds",
   "yank",
   ":hsplit-new",
@@ -39,6 +40,7 @@ C-r = [
 ]
 C-j = [
   "wonly",
+  ":buffer-close-others!",
   "extend_to_line_bounds",
   "yank",
   ":vsplit-new",
