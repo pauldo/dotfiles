@@ -24,10 +24,11 @@ Q = ":qa!"
 c = ":bc"
 C = ":bc!"
 o = ":bco"
+O = ":bco!"
 r = ":rl"
 R = ":rla"
 # j = ":sh cargo run"
-s = [
+C-r = [
   "wonly",
   "extend_line_below",
   "yank",
@@ -36,7 +37,7 @@ s = [
   ":pipe myq",
   "rotate_view"
 ]
-j = [
+C-j = [
   "wonly",
   "extend_line_below",
   "yank",
