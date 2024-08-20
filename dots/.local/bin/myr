@@ -22,4 +22,4 @@ done
 cmd="curl -sS -H 'Content-Type: application/json; charset=utf-8' -H '${R_TOKEN:-token: 1}' -X $method --data '$content' $R_URL$path"
 
 echo $cmd
-bash -c "$cmd" | jq .
+bash -c "$cmd" | jq -Rr '. as $line | (fromjson?) // $line'

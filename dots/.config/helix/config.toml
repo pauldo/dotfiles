@@ -30,7 +30,7 @@ R = ":rla"
 # j = ":sh cargo run"
 C-r = [
   "wonly",
-  "extend_line_below",
+  "extend_to_line_bounds",
   "yank",
   ":hsplit-new",
   "paste_after",
@@ -39,7 +39,7 @@ C-r = [
 ]
 C-j = [
   "wonly",
-  "extend_line_below",
+  "extend_to_line_bounds",
   "yank",
   ":vsplit-new",
   "paste_after",
