@@ -43,7 +43,8 @@ C-r = [
   "yank",
   ":hsplit-new",
   "paste_after",
-  ":pipe myq",
+  # ":pipe myq",
+  ":pipe mysql -u\"${MYSQL_USER:-test}\" \"${MYSQL_DB:-test}\" -e \"$(cat)\"",
   "rotate_view"
 ]
 C-j = [
