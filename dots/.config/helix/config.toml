@@ -53,6 +53,7 @@ C-j = [
   "extend_to_line_bounds",
   "yank",
   ":vsplit-new",
+  ":set-language jsonnet",
   "paste_after",
   ":pipe myr",
   "goto_file_start",
