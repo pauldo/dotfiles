@@ -6,8 +6,7 @@ command = "clippy"
 [[language]]
 name = "php"
 file-types = ["php"]
-# config = { enable = true, lint = true, unstable = true }
-auto-format = true
+# auto-format = true
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]

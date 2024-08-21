@@ -26,6 +26,7 @@ hidden = false
 ]
 C-r = [
   "wonly",
+  ":set-language sql",
   ":buffer-close-others!",
   "extend_to_line_bounds",
   "yank",
