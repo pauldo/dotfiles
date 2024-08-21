@@ -22,4 +22,4 @@ injection-regex = "rest"
 file-types = ["rest", "jsonc"]
 comment-tokens = "#"
 indent = { tab-width = 2, unit = "  " }
-language-servers = [ { "name" = "vscode-json-language-server", "only-features" = [ "document-highlight", "format" ] } ]
+# language-servers = [ { command = "vscode-json-language-server", language-id = "jsonc", only-features = [ "document-highlight", "format" ] } ]

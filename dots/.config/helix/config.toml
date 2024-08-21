@@ -24,18 +24,6 @@ hidden = false
   "add_newline_below",
   ":pipe sed -e 's/\t/    /g'"
 ]
-
-[keys.normal."ret"]
-w = ":w"
-q = ":q"
-Q = ":qa!"
-c = ":bc"
-C = ":bc!"
-o = ":bco"
-O = ":bco!"
-r = ":rl"
-R = ":rla"
-# j = ":sh cargo run"
 C-r = [
   "wonly",
   ":buffer-close-others!",
@@ -49,6 +37,7 @@ C-r = [
 ]
 C-j = [
   "wonly",
+  ":set-language jsonnet",
   ":buffer-close-others!",
   "extend_to_line_bounds",
   "yank",
@@ -57,8 +46,20 @@ C-j = [
   "paste_after",
   ":pipe myr",
   "goto_file_start",
-  "rotate_view"
+  "rotate_view",
 ]
+
+[keys.normal."ret"]
+w = ":w"
+q = ":q"
+Q = ":qa!"
+c = ":bc"
+C = ":bc!"
+o = ":bco"
+O = ":bco!"
+r = ":rl"
+R = ":rla"
+# j = ":sh cargo run"
 
 H = { r = ":config-reload", o = ":config-open" }
 
