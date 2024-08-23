@@ -21,7 +21,7 @@ hidden = false
 "=" = [
   "extend_to_line_bounds",
   "format_selections",
-  "add_newline_below",
+  # "add_newline_below",
   ":pipe sed -e 's/\t/    /g'"
 ]
 C-r = [
