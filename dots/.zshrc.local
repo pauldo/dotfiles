@@ -13,5 +13,7 @@ export GHPROXY4="https://mirror.ghproxy.com/https://github.com"
 export GHPROXY5="https://githubfast.com"
 export GHPROXY6="https://ghproxy.net/https://github.com"
 
+export HELIX_RUNTIME=~/src/helix/runtime
+
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases

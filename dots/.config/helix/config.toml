@@ -51,6 +51,7 @@ C-j = [
 ]
 
 [keys.normal."ret"]
+f = { n = "@%s\\\\n<ret>c<ret><esc>,", t = "@%s\\t<ret>&," }
 w = ":w"
 q = ":q"
 Q = ":qa!"
