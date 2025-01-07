@@ -1,7 +1,7 @@
 # Local config
 # [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
-export EDITOR="hx"
+export EDITOR="helix"
 #export PATH="$PATH:$(yarn global bin)"
 export PATH="$PATH:/usr/local/node/bin:$HOME/.yarn/bin:$HOME/.local/bin:$HOME/.cargo/bin"
 export PROXY="http://127.0.0.1:7890"

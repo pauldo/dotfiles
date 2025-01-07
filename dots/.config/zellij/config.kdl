@@ -145,6 +145,15 @@ keybinds {
             };
             SwitchToMode "Normal";
         }
+        // custom: yazi
+        bind "y" {
+            Run "zellij" "run" "-f" "-c" "-x=5%" "--width=90%" "-y=10%" "--height=80%" "--" "yazi" {
+                close_on_exit true
+                simplified_ui true
+                start_suspended false
+            };
+            SwitchToMode "Normal";
+        }
 
         bind "[" { SwitchToMode "Scroll"; }
         bind "Ctrl b" { Write 2; SwitchToMode "Normal"; }
